@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<!-- ============================================================
+  HOW TO EDIT (read me first)
+  Search for the banners: ===== SECTION NAME (START) =====
+  - CHANGE text: edit the words between tags.
+  - DELETE: remove the whole block between START and END (or one <li>/<tr>).
+  - ADD: copy an existing block, paste it after, edit the text.
+  Order: Nav, Home, About, Experience, Skills, Work Samples, Resume, Contact, Footer, Script.
+============================================================ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<!-- EDIT HERE: browser tab title and Google description (about 160 characters max) -->
+<title>Miko Yan S. Pepito | Healthcare Virtual Assistant</title>
+<meta name="description" content="Portfolio of Miko Yan S. Pepito, healthcare customer support professional in dental insurance and provider services, transitioning into Healthcare Virtual Assistance.">
+<meta property="og:title" content="Miko Yan S. Pepito | Healthcare Virtual Assistant">
+<meta property="og:description" content="Dental insurance support, eligibility and benefits verification, claims follow-up, HIPAA-aware practices.">
+   <link rel="icon" type="image/png" href="icon.png", style="width:34px;height:34px;border-radius:20px">
+<script>document.documentElement.className='js'</script>
+<style>
+/* ===== STYLES: you only need these to change the look =====
+   COLORS: edit the :root variables. --bg page, --fg text and black buttons, --mut gray text, --line dividers, --card gray boxes.
+   SECTION SPACING: change padding in the "section{" rule. */
+:root{--bg:#fff;--fg:#311414;--mut:#5c5c5c;--line:#e6e6e6;--card:#f5f5f5;--r:16px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%;height:100%}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);z-index:30}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px)) 0 max(20px,env(safe-area-inset-right,0px))}
+/* NAV BAR */
+header{position:sticky;top:env(safe-area-inset-top,0px);background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:20}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;letter-spacing:.02em}
+.logo b{width:34px;height:34px;border-radius:10px;background:var(--fg);color:#fff;display:grid;place-items:center;font-size:13px}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav ul a{display:block;text-decoration:none;color:var(--mut);font-size:15px;padding:8px 14px;border-radius:999px;transition:background .2s,color .2s}
+nav ul a:hover,nav ul a.on{background:var(--card);color:var(--fg)}
+#tg{display:none;background:var(--card);border:1px solid var(--line);border-radius:10px;min-height:44px;padding:0 16px;font:inherit;font-size:15px;cursor:pointer}
+@media(max-width:760px){#tg{display:block}nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 12px 14px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.08)}nav ul.open{display:flex}nav ul a{padding:14px 12px;font-size:17px;border-radius:12px}}
+/* SECTIONS: change padding to adjust the spacing between sections */
+section{padding:clamp(56px,9vw,104px) 0;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(2.2rem,7vw,4.2rem);line-height:1.04;margin:0 0 14px;letter-spacing:-.03em}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
+h3{margin:0 0 6px;font-size:1.05rem}
+.eyebrow{color:var(--mut);font-size:12.5px;text-transform:uppercase;letter-spacing:.14em;margin:0 0 10px;font-weight:600}
+.sub{color:var(--mut);margin:0 0 36px;max-width:620px}
+/* HOME */
+#home{background-image:radial-gradient(#d9d9d9 1px,transparent 1px);background-size:22px 22px;background-position:top left}
+.hero{display:grid;gap:44px;grid-template-columns:1fr;align-items:center}
+@media(min-width:860px){.hero{grid-template-columns:1.5fr 1fr}}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;margin:0 0 18px}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--fg);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.title{font-size:clamp(1.05rem,2.6vw,1.3rem);font-weight:600;margin:0 0 20px}
+.hero p{max-width:600px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 18px;min-width:120px}
+.stat b{display:block;font-size:1.5rem;line-height:1.2}
+.stat span{font-size:13px;color:var(--mut)}
+.photo{width:min(300px,70vw);aspect-ratio:1;margin:0 auto;border-radius:50%;background:var(--fg);color:#fff;display:grid;place-items:center;font-size:clamp(3rem,10vw,4.5rem);font-weight:700;letter-spacing:.04em;box-shadow:0 0 0 10px #fff,0 0 0 11px var(--line);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+/* BUTTONS: black by default, .btn.o is the white outline version */
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:12px;background:var(--fg);color:#fff;text-decoration:none;font:inherit;font-size:15px;font-weight:500;border:1px solid var(--fg);cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);background:#2a2a2a;box-shadow:0 8px 18px rgba(0,0,0,.18)}
+.btn.o{background:#fff;color:var(--fg);border-color:#cfcfcf}
+.btn.o:hover{background:var(--card);box-shadow:none}
+@media(max-width:520px){.btns .btn{flex:1 1 100%}}
+/* CARDS: gray boxes used in About and Skills */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;transition:transform .25s,box-shadow .25s,background .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(0,0,0,.08);background:#fff}
+.card p{margin:0;color:var(--mut)}
+.card ul,.job ul{margin:10px 0 0;padding-left:18px;color:var(--mut)}
+.card li,.job li{margin:4px 0}
+.ic{width:44px;height:44px;border-radius:12px;background:var(--fg);color:#fff;display:grid;place-items:center;margin-bottom:14px}
+.ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fine{font-size:13px;margin-top:12px!important}
+/* TIMELINE: Experience section */
+.tl{border-left:2px solid var(--line);margin-left:7px}
+.job{position:relative;padding:0 0 34px 28px}
+.job::before{content:"";position:absolute;left:-8px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--fg);box-shadow:0 0 0 4px #fff}
+.job.old::before{background:#fff;border:2px solid var(--fg)}
+.when{font-size:13px;color:var(--mut);margin:0;font-weight:500}
+.co{font-weight:700;margin:2px 0 0}
+.job h3{font-weight:500;color:var(--mut)}
+/* WORK SAMPLES: each sample is a tap-to-open box */
+.note{font-size:13.5px;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 20px}
+details.sample{border:1px solid var(--line);border-radius:var(--r);margin-bottom:12px;background:#fff;overflow:hidden}
+details.sample summary{cursor:pointer;list-style:none;padding:18px 54px 18px 20px;font-weight:600;position:relative;min-height:56px;background:var(--card)}
+details.sample summary::-webkit-details-marker{display:none}
+details.sample summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.5rem;font-weight:400;transition:transform .2s}
+details[open].sample summary::after{content:"\2212"}
+.sb{padding:18px 20px 22px}
+.sb .note{margin-top:0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:14px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--card);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid var(--fg)}
+.tag.ok{background:var(--fg);color:#fff}
+.tag.no{background:#e9e9e9;border-color:#e9e9e9}
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px}
+.dl div{background:var(--card);border-radius:12px;padding:12px 16px}
+.dl dt{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.dl dd{margin:2px 0 0;font-weight:600}
+.dl{margin:0}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.steps li{counter-increment:s;background:var(--card);border-radius:12px;padding:14px 16px 14px 58px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--fg);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:600}
+.call{background:var(--card);border-radius:12px;padding:6px 18px;font-size:14.5px}
+.call p{margin:12px 0}
+/* FOOTER */
+footer{padding:36px 0;color:var(--mut);font-size:14px;text-align:center}
+#top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;border:0;background:var(--fg);color:#fff;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:15}
+#top.show{opacity:1;pointer-events:auto}
+:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+/* SCROLL ANIMATION: items fade in as you scroll */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+/* PRINT: Save as PDF prints only the Resume section. Change #resume to print something else. */
+@page{margin:18mm}
+@media print{body::before,header,.noprint,#top,section:not(#resume),footer{display:none!important}#resume{border:0;padding:0}.card{box-shadow:none;border:1px solid #ccc}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+ 
+<!-- ===== NAVIGATION BAR (START) ===== -->
+<header><div class="wrap"><nav aria-label="Main">
+<!-- EDIT HERE: logo initials (inside <b>) and name shown on the top left -->
+<a class="logo" href="#home"><b>MP</b><span>Miko Pepito</span></a>
+<button id="tg" aria-expanded="false" aria-controls="menu">Menu</button>
+<!-- MENU LINKS: href must match a section id below (href="#skills" matches id="skills"). ADD: copy one <li>. DELETE: remove one <li>. -->
+<ul id="menu"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#samples">Work Samples</a></li></ul>
+</nav></div></header>
+<!-- ===== NAVIGATION BAR (END) ===== -->
+ 
+<main>
+<!-- ===== 1. HOME (START) ===== -->
+<section id="home"><div class="wrap hero">
+<div class="rv">
+<!-- EDIT HERE: availability badge. DELETE the line if you do not want it. -->
+<p class="pill"><i></i>Open to remote opportunities</p>
+<!-- EDIT HERE: your name and title -->
+<h1>MIKO YAN S. PEPITO</h1>
+<p class="title">Healthcare Virtual Assistant | Dental Insurance Support Specialist</p>
+<!-- EDIT HERE: intro. Each <p> is a paragraph; ADD or DELETE freely. -->
+<p>I am a healthcare customer support professional with hands-on experience in health insurance member services and dental provider services. I specialize in eligibility and benefits verification, dental insurance inquiries, claims follow-up, prior authorization support, EOB requests, and healthcare administrative assistance.</p>
+<p>I understand the importance of accuracy, patient confidentiality, and HIPAA-aware practices when handling sensitive healthcare information.</p>
+<p>I am passionate about helping healthcare providers streamline administrative tasks, improve communication, and deliver efficient patient and provider support.</p>
+<!-- QUICK STATS: edit the number (b) and label (span). Keep them true. ADD/DELETE by copying/removing a .stat block. -->
+<div class="stats">
+<div class="stat"><b>2</b><span>Healthcare BPO roles</span></div>
+<div class="stat"><b>6</b><span>Work samples</span></div>
+<div class="stat"><b>100%</b><span>Remote-ready</span></div>
+</div>
+<!-- HERO BUTTONS: edit the text; href is where it goes. DELETE a button by removing its <a> line. -->
+<div class="btns">
+<a class="btn" href="#experience">View My Experience</a>
+<a class="btn o" href="#skills">Explore My Skills</a>
+<a class="btn o" href="#resume">Download My Resume</a>
+<a class="btn o" href="#contact">Contact Me</a>
+</div></div>
+<!-- PROFILE PHOTO: shows initials until you add a photo.
+     To use a photo, replace MP with: <img src="YOUR-PHOTO-LINK.jpg" alt="Miko Yan S. Pepito"> -->
+<div class="photo rv" role="img" aria-label="Profile photo placeholder"><img src="prrof1 photo.png" alt="Miko Yan S. Pepito"></div>
+</div></section>
+<!-- ===== 1. HOME (END) ===== -->
+ 
+<!-- ===== 2. ABOUT (START) ===== -->
+<section id="about"><div class="wrap">
+<!-- EDIT HERE: small label (eyebrow), heading (h2), and gray line (sub) -->
+<p class="eyebrow rv">About</p><h2 class="rv">Professional background</h2>
+<p class="sub rv">From BPO healthcare support to remote healthcare assistance.</p>
+<!-- ABOUT CARDS: each .card is one box (h3 = title, p or ul = content). ADD: copy a card. DELETE: remove a card. -->
+<div class="grid">
+<div class="card rv"><h3>My journey</h3><p>I started in the BPO industry, handling health insurance member inquiries at Teleperformance. I later became a Customer Advocate in dental provider services, supporting dental offices with insurance verification, benefit inquiries, claims follow-up, prior authorization status, EOB requests, and payment-related concerns. This gave me a view of healthcare insurance from both the member and provider sides.</p></div>
+<div class="card rv"><h3>Career objective</h3><p>To grow from healthcare customer support into remote Healthcare or Dental Virtual Assistance, helping clinics and providers reduce administrative load and communicate clearly with patients and payers.</p></div>
+<div class="card rv"><h3>Strengths and values</h3><ul><li>Accuracy and attention to detail</li><li>Patient confidentiality</li><li>Clear, professional communication</li><li>Continuous learning</li></ul></div>
+</div></div></section>
+<!-- ===== 2. ABOUT (END) ===== -->
+ 
+<!-- ===== 3. EXPERIENCE (START) ===== -->
+<section id="experience"><div class="wrap">
+<p class="eyebrow rv">Experience</p><h2 class="rv">Work history</h2>
+<p class="sub rv">Most recent first.</p>
+<!-- TIMELINE: each .job is one job, newest on top. Inside: .when = dates, .co = company, h3 = job title, each <li> = one duty.
+     ADD a job: copy a whole .job block into the right time order. DELETE: remove its block. -->
+<div class="tl">
+<!-- CURRENT JOB: solid dot. When you leave, change class="job" to class="job old" and update the end date. EDIT HERE: replace "Current BPO Company" with the real company name. -->
+<div class="job rv"><p class="when">August 9, 2026 – Present</p><p class="co">Current BPO Company</p><h3>Customer Advocate – Dental Provider Services</h3><ul>
+<li>Verify member eligibility and dental insurance benefits.</li><li>Review coverage limitations and applicable benefit percentages.</li><li>Handle dental procedure code coverage inquiries.</li><li>Follow up on claims using additional information from providers.</li><li>Assist with stop-payment and payment reissue requests.</li><li>Review possible overpayments.</li><li>Process requests for Explanation of Benefits (EOB).</li><li>Check prior authorization status and discuss approved amounts.</li><li>Review treatment preparation dates and seat dates.</li><li>Identify whether procedures are prior placements or replacements.</li><li>Maintain accurate call documentation and protect confidential patient information.</li></ul></div>
+<!-- PAST JOBS: class="job old" gives an outlined dot -->
+<div class="job old rv"><p class="when">September 2025 – January 2026</p><p class="co">Teleperformance Philippines</p><h3>Customer Service Representative – Healthcare Account</h3><ul><li>Handle health insurance member inquiries.</li><li>Verify eligibility, benefits, and coverage.</li><li>Assist with medication and prescription coverage inquiries.</li><li>Support pharmacy benefit and claims concerns.</li><li>Assist with prior authorization inquiries.</li><li>Guide members through claims, denials, and appeals.</li><li>Maintain accurate documentation and confidentiality.</li></ul></div>
+<div class="job old rv"><p class="when">June 3 – August 29, 2025</p><p class="co">S.P. Madrid Philippines</p><h3>Collection Officer I</h3><ul><li>Handle outbound collection calls.</li><li>Discuss payment arrangements.</li><li>Document account updates.</li><li>Conduct field visits and verify financed vehicles.</li></ul></div>
+<div class="job old rv"><p class="when">October 2024 – January 2025</p><p class="co">J&amp;T Express</p><h3>Warehouse / Processing Staff</h3><ul><li>Process and track shipments.</li><li>Support accurate package handling.</li><li>Coordinate with warehouse teams.</li></ul></div>
+<div class="job old rv"><p class="when">January 2017 – December 2018</p><p class="co">Angela’s Kitchen Food and Tray</p><h3>Service Crew / Event Organizer</h3><ul><li>Assist customers and guests.</li><li>Coordinate event activities.</li><li>Support customer service operations.</li></ul></div>
+<div class="job old rv"><p class="when">January 2016 – December 2017</p><p class="co">Raine’s Spa</p><h3>Massage Therapist</h3><ul><li>Provide customer service.</li><li>Schedule appointments.</li><li>Maintain client records.</li><li>Support client satisfaction.</li></ul></div>
+</div></div></section>
+<!-- ===== 3. EXPERIENCE (END) ===== -->
+ 
+<!-- ===== 4. SKILLS (START) ===== -->
+<section id="skills"><div class="wrap">
+<p class="eyebrow rv">Skills</p><h2 class="rv">Healthcare skills and competencies</h2>
+<p class="sub rv">Built through hands-on healthcare customer service.</p>
+<!-- SKILL CARDS: h3 = category, each <li> = one skill. ADD/DELETE li lines. ADD a category by copying a card. The icon is the small svg at the top of each card. Only list skills you truly have. -->
+<div class="grid">
+<div class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 3C4.500 3 3 5 3 7.500c0 2 1 3.500 1.500 6C5 16.500 5.500 21 7.500 21c1.700 0 1.500-4 4.500-4s2.800 4 4.500 4c2 0 2.500-4.500 3-7.500.5-2.500 1.500-4 1.500-6C21 5 19.500 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg></div><h3>Dental Insurance Support</h3><ul><li>Eligibility and benefits verification</li><li>Coverage and benefit percentage review</li><li>Dental procedure code inquiries</li><li>Claims follow-up</li><li>EOB request handling</li><li>Prior authorization status checking</li><li>Approved amount explanation</li><li>Payment inquiry support</li><li>Overpayment review</li></ul></div>
+<div class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.500"/><rect x="17" y="14" width="4" height="6" rx="1.500"/></svg></div><h3>Healthcare Customer Support</h3><ul><li>Member and provider services</li><li>Insurance inquiries</li><li>Medication and pharmacy benefit inquiries</li><li>Claims and appeal assistance</li><li>Professional telephone communication</li><li>Call documentation</li><li>Problem-solving</li></ul></div>
+<!-- HIPAA CARD: keep the small note about no formal certification unless you earn one, then edit it. -->
+<div class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>HIPAA Knowledge and Privacy Practices</h3><ul><li>PHI confidentiality</li><li>Verifying patient and caller identity before sharing information</li><li>Confirming authorization before disclosure</li><li>Applying the Minimum Necessary Principle</li><li>Confidentiality during phone interactions</li><li>Responsible handling of records and documentation</li><li>Following established privacy and security procedures</li></ul><p class="fine">I practice these principles in my healthcare customer service work. I do not hold a formal HIPAA certification.</p></div>
+<div class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h6"/></svg></div><h3>Administrative and VA Skills</h3><ul><li>Data entry</li><li>Documentation management</li><li>Email communication</li><li>Administrative support</li><li>Information organization</li><li>Appointment coordination</li><li>Customer relationship support</li><li>Microsoft Office</li><li>Google Workspace</li></ul></div>
+</div></div></section>
+<!-- ===== 4. SKILLS (END) ===== -->
+ 
+<!-- ===== 5. WORK SAMPLES (START) ===== -->
+<section id="samples"><div class="wrap">
+<p class="eyebrow rv">Work Samples</p><h2 class="rv">Practical demonstrations</h2>
+<!-- DISCLAIMER: keep this note. It tells viewers all samples are fictional. -->
+<p class="note rv">All samples are independent demonstrations created for portfolio purposes using fictional information. They are not actual employer work. Tap a sample to open it.</p>
+ 
+<!-- EACH SAMPLE is a <details> box: the <summary> is the clickable title. Add the word open inside <details ...> to have it open by default. -->
+<!-- SAMPLE 1 (START): verification record. Edit the dd values. Use only fictional data. -->
+<details class="sample rv" open><summary>Sample 1: Dental Eligibility and Benefits Verification</summary><div class="sb">
+<dl class="dl">
+<div><dt>Patient name</dt><dd>Jane Sample</dd></div><div><dt>Member ID</dt><dd>XXX-000-1234</dd></div>
+<div><dt>Insurance provider</dt><dd>Sample Dental Plan</dd></div><div><dt>Effective date</dt><dd>01/01/2026</dd></div>
+<div><dt>Eligibility status</dt><dd><span class="tag ok">Active</span></dd></div><div><dt>Annual maximum</dt><dd>$1,500</dd></div>
+<div><dt>Deductible</dt><dd>$50 individual</dd></div><div><dt>Preventive</dt><dd>100%</dd></div>
+<div><dt>Basic</dt><dd>80%</dd></div><div><dt>Major</dt><dd>50%</dd></div>
+<div><dt>Orthodontic</dt><dd>50% (lifetime max $1,000)</dd></div>
+</dl></div></details>
+<!-- SAMPLE 1 (END) -->
+ 
+<!-- SAMPLE 2 (START): CDT code list. ADD a code: copy one <tr> row. DELETE: remove the row. -->
+<details class="sample rv"><summary>Sample 2: Dental Procedure Code Reference</summary><div class="sb">
+<p class="note">Educational reference only. Coverage depends on each individual insurance policy.</p>
+<div class="tw"><table style="min-width:0"><thead><tr><th>Code</th><th>General description</th></tr></thead><tbody>
+<tr><td>D0120</td><td>Periodic oral evaluation</td></tr>
+<tr><td>D0140</td><td>Limited oral evaluation</td></tr>
+<tr><td>D0210</td><td>Intraoral complete series of radiographic images</td></tr>
+<tr><td>D0274</td><td>Bitewings, four radiographic images</td></tr>
+<tr><td>D0330</td><td>Panoramic radiographic image</td></tr>
+<tr><td>D1110</td><td>Adult prophylaxis</td></tr>
+<tr><td>D4341</td><td>Periodontal scaling and root planing, four or more teeth per quadrant</td></tr>
+<tr><td>D4342</td><td>Periodontal scaling and root planing, one to three teeth per quadrant</td></tr>
+<tr><td>D2740</td><td>Crown, porcelain/ceramic</td></tr>
+<tr><td>D2950</td><td>Core buildup, including any pins when required</td></tr>
+</tbody></table></div></div></details>
+<!-- SAMPLE 2 (END) -->
+ 
+<!-- SAMPLE 3 (START): claims tracker. Columns are in <thead>. ADD a row: copy one <tr> in <tbody>. Keep claim numbers fictional. Status badge: class "tag ok" (black), "tag" (outline), "tag no" (gray). -->
+<details class="sample rv"><summary>Sample 3: Claims Follow-up Tracker</summary><div class="sb">
+<div class="tw"><table><thead><tr><th>Date</th><th>Dental office</th><th>Claim ref</th><th>Code</th><th>Concern</th><th>Follow-up action</th><th>Status</th><th>Next action</th></tr></thead><tbody>
+<tr><td>03/02/26</td><td>Bright Smile Dental</td><td>CLM-SAMPLE-001</td><td>D2740</td><td>Claim pending over 30 days</td><td>Requested records from provider</td><td><span class="tag">In review</span></td><td>Recheck in 5 days</td></tr>
+<tr><td>03/04/26</td><td>Oak Street Dental</td><td>CLM-SAMPLE-002</td><td>D4341</td><td>Payment lower than expected</td><td>Reviewed benefit percentage</td><td><span class="tag ok">Explained</span></td><td>Send EOB</td></tr>
+<tr><td>03/06/26</td><td>Harbor Family Dental</td><td>CLM-SAMPLE-003</td><td>D1110</td><td>Possible overpayment</td><td>Reviewed payment history</td><td><span class="tag">Under review</span></td><td>Confirm adjustment</td></tr>
+</tbody></table></div></div></details>
+<!-- SAMPLE 3 (END) -->
+ 
+<!-- SAMPLE 4 (START): EOB workflow. Each <li> is a step; numbers are automatic. ADD/DELETE li lines freely. -->
+<details class="sample rv"><summary>Sample 4: EOB Request Workflow</summary><div class="sb">
+<ol class="steps"><li>Receive EOB request from dental office.</li><li>Verify provider and member information according to authorized procedures.</li><li>Review the claim information.</li><li>Confirm the appropriate EOB document.</li><li>Submit or process the request.</li><li>Document the action taken.</li></ol></div></details>
+<!-- SAMPLE 4 (END) -->
+ 
+<!-- SAMPLE 5 (START): prior authorization tracker. Same pattern as Sample 3. -->
+<details class="sample rv"><summary>Sample 5: Prior Authorization Tracker</summary><div class="sb">
+<div class="tw"><table><thead><tr><th>Auth ref</th><th>Code</th><th>Submitted</th><th>Status</th><th>Approved amount</th><th>Follow-up</th><th>Notes</th></tr></thead><tbody>
+<tr><td>PA-SAMPLE-101</td><td>D2740</td><td>02/20/26</td><td><span class="tag ok">Approved</span></td><td>$620.00</td><td>N/A</td><td>Replacement crown, seat date noted</td></tr>
+<tr><td>PA-SAMPLE-102</td><td>D4341</td><td>02/25/26</td><td><span class="tag">Pending</span></td><td>Pending</td><td>03/10/26</td><td>Awaiting X-rays from office</td></tr>
+<tr><td>PA-SAMPLE-103</td><td>D2950</td><td>03/01/26</td><td><span class="tag no">Denied</span></td><td>$0.00</td><td>03/12/26</td><td>Advise office on appeal options</td></tr>
+</tbody></table></div></div></details>
+<!-- SAMPLE 5 (END) -->
+ 
+<!-- SAMPLE 6 (START): fictional call note. Each <p> is a line. Never put real patient or company information here. -->
+<details class="sample rv"><summary>Sample 6: HIPAA-Aware Call Documentation</summary><div class="sb">
+<div class="call">
+<p><strong>Caller:</strong> Bright Smile Dental (fictional) · <strong>Call type:</strong> Claim status</p>
+<p><strong>Identity verified:</strong> Office name, caller name, provider ID, and patient’s name with date of birth confirmed before any discussion.</p>
+<p><strong>Authorization:</strong> Provider confirmed as the treating office for this patient on the claim.</p>
+<p><strong>PHI handling:</strong> Shared only claim status and processed amount (minimum necessary). No unrelated plan or personal details disclosed.</p>
+<p><strong>Summary:</strong> Caller asked about a pending crown claim. Explained it was awaiting records, advised what to submit, and gave the expected review timeframe.</p>
+<p><strong>Resolution:</strong> Caller understood next steps. Notes documented accurately; no further questions.</p>
+</div></div></details>
+<!-- SAMPLE 6 (END) -->
+</div></section>
+<!-- ===== 5. WORK SAMPLES (END) ===== -->
+ 
+<!-- ===== 6. RESUME (START) ===== -->
+<!-- This card is what gets printed or saved as PDF. EDIT the text to match your resume. -->
+<section id="resume"><div class="wrap">
+<p class="eyebrow rv" ">Resume</p><h2 class="rv">Download my resume</h2>
+<p class="sub rv noprint">Save this summary as a PDF, or contact me to receive my full resume.</p>
+<div class="card rv" style="max-width:680px">
+<h3>Miko Yan S. Pepito</h3>
+<p><strong>Healthcare Customer Support Professional | Transitioning into Healthcare Virtual Assistance</strong></p>
+
+<ul>
+  <li><strong>Customer Advocate – Dental Provider Services, Concentrix</strong> (Aug 2026 – Present): Assisting dental offices with insurance eligibility and benefits verification, coverage percentages, dental procedure inquiries, claims follow-up, prior authorization status, EOB requests, payment inquiries, stop-payment and reissue requests, and overpayment concerns.</li>
+
+  <li><strong>Customer Service Representative – Healthcare Account, Teleperformance</strong> (Sep 2025 – Jan 2026): Supported health insurance members with eligibility, benefits, coverage, prescription and pharmacy benefits, medication claims, formulary inquiries, prior authorization requirements, claim denials, and appeals.</li>
+
+  <li><strong>Dental Insurance Support:</strong> Eligibility verification, benefit breakdowns, coverage limitations, procedure code inquiries, treatment date review, prior placement and replacement verification, and pre-authorization approval details.</li>
+
+  <li><strong>Healthcare Administrative Skills:</strong> Claims follow-up, EOB documentation requests, payment-related assistance, accurate call documentation, data entry, account updates, and provider and member communication.</li>
+
+  <li><strong>HIPAA-Aware Practices:</strong> Patient and caller identity verification, Protected Health Information (PHI) confidentiality, authorized information disclosure, minimum necessary principle, and responsible handling of sensitive healthcare information.</li>
+
+  <li><strong>Core Strengths:</strong> Healthcare customer service, dental provider support, insurance member services, attention to detail, problem-solving, professional communication, adaptability, and accurate documentation.</li>
+
+  <li><strong>Technical Skills:</strong> Microsoft Word, Excel, Google Workspace (Gmail, Docs, and Sheets), Microsoft Teams, data entry, and digital documentation.</li>
+</ul>
+<!-- RESUME BUTTONS: Save as PDF uses the browser print dialog. To link a real resume file instead, replace the <button> with:
+     <a class="btn" href="YOUR-RESUME-LINK.pdf" download>Download PDF</a> -->
+<div class="btns noprint"><button class="btn" onclick="window.print()">Save as PDF</button><a class="btn o" href="#contact">Request full resume</a></div>
+
+</div></div></section>
+<!-- ===== 6. RESUME (END) ===== -->
+ 
+<!-- ===== 7. CONTACT (START) ===== -->
+<section id="contact"><div class="wrap">
+<p class="eyebrow rv">Contact</p><h2 class="rv">Let’s work together</h2>
+<p class="sub rv">Open to Healthcare and Dental Virtual Assistant roles with remote teams worldwide.</p>
+<!-- IMPORTANT, REPLACE THESE 3 LINKS BEFORE SHARING:
+     1) Email: change youremail@example.com
+     2) LinkedIn: change the link to your profile address
+     3) Phone: change +630000000000 (keep + and country code) or delete the Call button
+     ADD another button (Facebook, WhatsApp) by copying a line and changing href and text. -->
+<div class="btns rv" style="margin-top:0">
+<a class="btn" href="mailto:mikopepito09@gmail.com">Email me</a>
+<a class="btn o" href="https://www.linkedin.com/in/miko-yan-pepito-624666262/" rel="noopener">LinkedIn</a>
+<a class="btn o" href="tel:+639756855073">Call Whats App</a>
+</div></div></section>
+<!-- ===== 7. CONTACT (END) ===== -->
+</main>
+ 
+<!-- ===== FOOTER: EDIT HERE the bottom text. The year updates automatically. ===== -->
+<footer><div class="wrap">© <span id="y">2026</span> Miko Yan S. Pepito. All work samples are fictional demonstrations.</div></footer>
+<button id="top" class="noprint" aria-label="Back to top">↑</button>
+ 
+<!-- ===== SCRIPT: phone menu, active menu highlight, fade-in animation, back-to-top, footer year. No need to edit. ===== -->
+<script>
+(function(){
+var d=document,t=d.getElementById('tg'),m=d.getElementById('menu'),up=d.getElementById('top');
+function close(){m.classList.remove('open');t.setAttribute('aria-expanded','false')}
+t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A')close()});
+d.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+d.getElementById('y').textContent=new Date().getFullYear();
+up.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+addEventListener('scroll',function(){up.classList.toggle('show',scrollY>600)},{passive:true});
+if('IntersectionObserver' in window){
+var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{threshold:.08});
+d.querySelectorAll('.rv').forEach(function(el){ro.observe(el)});
+var links=m.querySelectorAll('a');
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+d.querySelectorAll('main section').forEach(function(s){so.observe(s)});
+}else{d.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
+ 
+
+
+
